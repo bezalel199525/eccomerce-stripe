@@ -1,12 +1,15 @@
 {
   "name": "ecommerce",
+  "homepage": "https://bezalel199525.github.io/eccomerrce",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@babel/core": "^7.17.9",
